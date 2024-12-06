@@ -11,29 +11,29 @@
     <!-- Link to the favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
    
-    <style>
-    
+     <style>
+        /* Basic styling for better presentation /
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         iframe {
             border: none;
             width: 100%;
+            height: 100vh; / Adjust as needed for the content */
         }
     </style>
 </head>
 <body>
   <iframe 
-       id="myIframe" 
-      src="https://store8341.store.link/" 
-        title="Embedded Store">
+        src="https://store8341.store.link/" 
+        title="Embedded Store" 
+        width="100%" 
+        height="800px" 
+        style="border: none;">
     </iframe>
-    <script>
-        // Function to auto-resize the iframe based on its content
-        function resizeIframe() {
-            var iframe = document.getElementById("myIframe");
-            iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-        }
-
-        // Resize the iframe on load and when the content changes
-        document.getElementById("myIframe").onload = resizeIframe;
-    </script>
 </body>
 </html>
